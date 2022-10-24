@@ -42,10 +42,17 @@ header {
     border-top-style: groove;
     border-top-width: 6px;
     border-top-color: var(--tertiary);
+    min-height: 8vh;
 }
 
 #weather-section {
     background-color: var(--tertiary);
     color: var(--dark);
     min-height: 80vh;
+}
+
+#forecast-section {
+    background-color: var(--dark);
+    color: var(--light);
+    min-height: 30vh;
 }

@@ -35,19 +35,34 @@
                     <input class = "form-input p-1 align-middle" id = "city-search" type = "text" aria-labelledby = "search-form-label" aria-controls = "REPLACE ME" placeholder = "Philadelphia"/>
                     <button class = "btn pt-0 pb-0 mt-0 mt-lg-2 align-middle" type = "submit" aria-label = "submit" id = "city-search-btn">Search</button>
                 </form>
-                <div id = "history-section" class = "container-fluid text-center text-lg-left">
-
+                <div id = "history-section" class = "text-center text-lg-left">
+                    <!-- Append history buttons here -->
                 </div>
             </div>
-            <div class = "col-lg-9" id = "weather-section">
-                <div class = "row p-3" id = "today-section">
-                    <h3 class = "text-center text-lg-left">
-                        <span id = "city-label"></span>
-                        <span id = "today-date"></span>
-                        <img id = "today-icon" class = "weather-icon" alt = "">
+            <section class = "col-lg-9 pt-1 pb-1" id = "weather-section">
+                <div class = "row pl-3 pr-3 pt-1 pb-1" id = "today-section">
+                    <h3 class = "text-center text-lg-left align-text-top">
+                        <span class = "align-top" id = "city-label">city</span>
+                        <span class = "align-top" id = "today-date">date</span>
+                        <img id = "today-icon" class = "weather-icon" alt = "wic">
                     </h3>
                 </div>
-            </div>
+                <div class = "row pl-3">
+                    <p class = "text-left table-row">Temp: <span id="today-temp"></span>°F</p>
+                </div>
+                <div class = "row pl-3">    
+                    <p class = "text-left table-row">Wind: <span id="today-temp"></span>MPH</p>
+                </div>
+                <div class = "row pl-3">
+                    <p class = "text-left table-row">Humidity: <span id="today-temp"></span>MPH</p>
+                </div>
+                <div class = "row p-1 pl-3" id = "forecast-section">
+                    <h3 class = "text-center text-lg-left align-text-top">5-Day Forecast</h3>
+                    <div id = "five-day">
+                        <!-- Append 5-day forecast here -->
+                    </div>
+                </div>
+            </section>
         </div>
     </section>
 
