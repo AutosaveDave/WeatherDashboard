@@ -23,6 +23,33 @@
   </head>
 
   <body>
+    <header>
+        <h1 class = "text-center">Weather Dashboard</h1>
+    </header>
+
+    <section class = "container-fluid">
+        <div class = "row">
+            <div class = "col-lg-3 pt-1" id = "search-section">
+                <h3 class = "text-center text-lg-left pt-1 pb-1" id = "search-form-label">Search for a City</h3>
+                <form id = "city-search-form" class = "form text-center text-lg-left mb-2 mt-1">
+                    <input class = "form-input p-1 align-middle" id = "city-search" type = "text" aria-labelledby = "search-form-label" aria-controls = "REPLACE ME" placeholder = "Philadelphia"/>
+                    <button class = "btn pt-0 pb-0 mt-0 mt-lg-2 align-middle" type = "submit" aria-label = "submit" id = "city-search-btn">Search</button>
+                </form>
+                <div id = "history-section" class = "container-fluid text-center text-lg-left">
+
+                </div>
+            </div>
+            <div class = "col-lg-9" id = "weather-section">
+                <div class = "row p-3" id = "today-section">
+                    <h3 class = "text-center text-lg-left">
+                        <span id = "city-label"></span>
+                        <span id = "today-date"></span>
+                        <img id = "today-icon" class = "weather-icon" alt = "">
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
