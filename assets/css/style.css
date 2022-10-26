@@ -41,8 +41,25 @@ header {
 #history-section {
     border-top-style: ridge;
     border-top-width: 4px;
-    border-top-color: var(--tertiary);
+    border-top-color: var(--primary);
     min-height: 8vh;
+}
+
+.historyBtn {
+    margin: 2px;
+    background-color: var(--tertiary);
+    color: var(--dark);
+    border-color: var(--dark);
+    font-weight: bold;
+    border-radius: 4px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.historyBtn:hover {
+    background-color: var(--light);
+    color: var(--primary);
+    border-color: var(--primary);
 }
 
 #weather-section {
@@ -55,4 +72,58 @@ header {
     border-top-style: ridge;
     border-top-width: 4px;
     border-top-color: var(--secondary);
+}
+
+#today-uvIndex {
+    border-style: outset;
+    border-radius: 10px;
+    border-width: 4px;
+    margin-left: 10px;
+    padding: 0px 20px;
+    font-weight: bold;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.fiveday-card {
+    border-style: outset;
+    border-radius: 6px;
+    border-width: 2px;
+    border-color: var(--primary);
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.fiveday-date {
+    font-weight: bold;
+}
+
+.uv-favorable {
+    background-color: green;
+    color: white;
+    border-color: darkgreen;
+}
+
+.uv-moderate {
+    background-color: yellow;
+    color: black;
+    border-color: olive;
+}
+
+.uv-severe {
+    background-color: orange;
+    color: black;
+    border-color: darkorange;
+}
+
+.uv-real-bad {
+    background-color: red;
+    color: black;
+    border-color: maroon;
+}
+
+.uv-mad-max {
+    background-color: darkviolet;
+    color: black;
+    border-color: purple;
 }

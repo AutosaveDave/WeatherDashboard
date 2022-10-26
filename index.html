@@ -46,17 +46,20 @@
                     <h3 class = "align-top" id = "today-date">date</h3>
                 </div>
                 <div class = "row pl-3 justify-content-center justify-content-lg-start">
-                    <p class = "">Temp: <span id="today-temp"></span>°F</p>
+                    <p>Temp: <span id="today-temp"></span>°F</p>
                 </div>
                 <div class = "row pl-3 justify-content-center justify-content-lg-start">    
-                    <p class = "">Wind: <span id="today-wind"></span>MPH</p>
+                    <p>Wind: <span id="today-wind"></span>MPH</p>
                 </div>
                 <div class = "row pl-3 justify-content-center justify-content-lg-start">
-                    <p class = "">Humidity: <span id="today-humidity"></span>MPH</p>
+                    <p>Humidity: <span id="today-humidity"></span>MPH</p>
                 </div>
-                <div class = "row ml-0 mr-0 pt-1 justify-content-center justify-content-lg-start" id = "forecast-section">
-                    <h3 class = "text-center text-lg-left align-text-top">5-Day Forecast</h3>
-                    <div id = "five-day">
+                <div class = "row pl-3 justify-content-center justify-content-lg-start">
+                    <p>UV Index: <div id="today-uvIndex"></div></p>
+                </div>
+                <div class = "ml-0 mr-0 pt-1 justify-content-center justify-content-lg-start" id = "forecast-section">
+                    <h3 class = "text-center align-text-top">5-Day Forecast</h3>
+                    <div id = "five-day" class = "row justify-content-between justify-content-lg-around">
                         <!-- Append 5-day forecast here -->
                     </div>
                 </div>
@@ -65,21 +68,15 @@
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"
       integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="
-      crossorigin="anonymous"
-    ></script>
-    <script 
-      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" 
       integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w==" 
-      crossorigin="anonymous"
-    ></script>
-    <script 
-      src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js" 
       integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" 
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
