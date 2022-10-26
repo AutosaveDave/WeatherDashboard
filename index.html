@@ -35,11 +35,9 @@
                     <input class = "form-input p-1 mr-1 ml-1 align-middle" id = "city-search" type = "text" aria-labelledby = "search-form-label" aria-controls = "REPLACE ME" placeholder = "Philadelphia"/>
                     <button class = "btn pt-0 pb-0 mt-0 mt-lg-2 align-middle" type = "submit" aria-label = "submit" id = "city-search-btn">Search</button>
                 </form>
-                <div id = "history-section" class = "text-center text-lg-left">
-                    <!-- Append history buttons here -->
-                </div>
+                <div id = "history-section" class = "text-center text-lg-left"></div>
             </div>
-            <section class = "col-lg-9 pt-1 pb-1" id = "weather-section">
+            <section class = "d-none col-lg-9 pt-1 pb-1" id = "weather-section">
                 <div class = "row justify-content-around justify-content-lg-between pl-3 pr-3 pt-1 pb-1" id = "today-section">
                     <h3 class = "align-text-top" id = "city-name">city</h3>
                     <img class = "weather-icon" id = "today-icon" alt = "wic">
@@ -59,9 +57,7 @@
                 </div>
                 <div class = "ml-0 mr-0 pt-1 justify-content-center justify-content-lg-start" id = "forecast-section">
                     <h3 class = "text-center align-text-top">5-Day Forecast</h3>
-                    <div id = "five-day" class = "row justify-content-between justify-content-lg-around">
-                        <!-- Append 5-day forecast here -->
-                    </div>
+                    <div id = "five-day" class = "d-none row justify-content-between justify-content-lg-around"></div>
                 </div>
             </section>
         </div>

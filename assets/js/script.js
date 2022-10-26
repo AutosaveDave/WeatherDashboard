@@ -4,6 +4,7 @@ const citySearchBtn = document.getElementById('city-search-btn');
 const citySearchForm = document.getElementById('city-search-form');
 const historySection = document.getElementById('history-section');
 const todaySection = document.getElementById('today-section');
+const weatherSection = document.getElementById('weather-section');
 const cityName = document.getElementById('city-name');
 const todayIcon = document.getElementById('today-icon');
 const todayDate = document.getElementById('today-date');
@@ -56,13 +57,14 @@ function getCoords(searchTerm) {
           });
 }
 
+
 function addHistoryBtn(city, lat, lon) {
     historyCount = parseInt(localStorage.getItem('weatherHistory-count'));
     if(!historyCount){
         localStorage.setItem(`weatherHistory-count`, "" + 0);
         historyCount = 0;
     }
-    historyCount +=1 ;
+    historyCount +=1;
     localStorage.setItem(`weatherHistory-count`, "" + historyCount);
     localStorage.setItem(`weatherHistory-${historyCount}`, city);
     localStorage.setItem(`weatherHistory-lat-${historyCount}`, lat);
@@ -130,6 +132,8 @@ function getWeather(lat, lon) {
 }
 
 function renderToday(data){
+    weatherSection.classList.remove('d-none');
+    fiveDay.classList.remove('d-none');
     const date = dayjs().tz(data.timezone).format('M/D/YYYY');
     cityName.textContent = currentCity;
     todayIcon.src = iconBaseUrl + data.current.weather[0].icon + '.png';
